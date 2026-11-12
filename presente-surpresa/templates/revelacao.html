@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Parabéns, mãe!</title>
+
+    <link rel="stylesheet" href="{{ url_for('public', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <main class="pagina-revelacao">
+
+        <section class="conteudo-revelacao">
+
+            <h1>Parabéns, mãe!</h1>
+
+            <div class="coracao">♡</div>
+
+            <p class="mensagem-revelacao">
+                Você merece tudo de melhor<br>
+                e muito mais.
+            </p>
+
+            <div class="presentes">
+
+                <div class="presente-item">
+                    <img src="{{ url_for('public', filename='img/presente1.png') }}"
+                         alt="Primeiro presente">
+                </div>
+
+                <div class="presente-item">
+                    <img src="{{ url_for('public', filename='img/presente2.png') }}"
+                         alt="Segundo presente">
+                </div>
+
+            </div>
+
+            <p class="mensagem-final">
+                Com todo meu amor
+            </p>
+
+            <div class="detalhe-final">
+                ───── ♡ ─────
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>

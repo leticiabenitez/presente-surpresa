@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revelar presente</title>
+    <link rel="stylesheet" href="{{ url_for('public', filename='css/style.css') }}">
+</head>
+<body>
+    <main class="pagina-senha">
+        <section class="conteudo-senha">
+            <h1>Chegou a hora!</h1>
+            <p class="descricao-senha">
+                Mas antes, preciso saber<br>
+                se você está pronta para descobrir...
+            </p>
+
+            <form action="{{ url_for('senha') }}" method="POST">
+                <div class="campo-senha">
+                    <span class="icone-cadeado">♙</span>
+                    <input
+                        type="password"
+                        name="senha"
+                        placeholder="Digite a senha"
+                        required
+                    >
+                </div>
+
+                {% if erro %}
+                    <p class="mensagem-erro">{{ erro }}</p>
+                {% endif %}
+
+                <button type="submit" class="botao botao-senha">
+                    Revelar meu presente
+                </button>
+            </form>
+            <a href="{{ url_for('presente') }}" class="voltar">
+                ← Voltar
+            </a>
+        </section>
+    </main>
+</body>
+</html>

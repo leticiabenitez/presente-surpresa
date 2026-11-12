@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua surpresa</title>
+    <link rel="stylesheet" href="{{ url_for('public', filename='css/style.css') }}">
+</head>
+<body>
+    <main class="pagina-presente">
+        <section class="conteudo-presente">
+            <h1>Uma surpresa<br>espera por você...</h1>
+            <p class="descricao-presente">
+                Preparada especialmente para você.
+            </p>
+            <div class="imagem-presente">
+                <img src="{{ url_for('public', filename='img/presente.png') }}"
+                     alt="Uma caixa de presente">
+            </div>
+            <a href="{{ url_for('verificar') }}" class="botao botao-revelar">
+                Revelar presente
+                <span>→</span>
+            </a>
+            <a href="{{ url_for('inicio') }}" class="voltar">
+                ← Voltar
+            </a>
+        </section>
+    </main>
+</body>
+</html>

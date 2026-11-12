@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aguarde a surpresa</title>
+    <link rel="stylesheet" href="{{ url_for('public', filename='css/style.css') }}">
+</head>
+<body>
+    <main class="pagina-contagem">
+        <section class="conteudo-contagem">
+            <h1>
+                Algumas surpresas<br>
+                merecem ser esperadas...
+            </h1>
+
+            <p class="legenda-contagem">
+                SEU PRESENTE ESTARÁ DISPONÍVEL EM:
+            </p>
+
+            <div class="data-contagem">
+                19 <span>/</span> 11
+            </div>
+
+            <div class="linha-contagem"></div>
+
+            <div class="contador">
+                <div class="contador-item">
+                    <span id="dias">00</span>
+                    <small>DIAS</small>
+                </div>
+
+                <div class="contador-item">
+                    <span id="horas">00</span>
+                    <small>HORAS</small>
+                </div>
+
+                <div class="contador-item">
+                    <span id="minutos">00</span>
+                    <small>MIN</small>
+                </div>
+
+                <div class="contador-item">
+                    <span id="segundos">00</span>
+                    <small>SEG</small>
+                </div>
+            </div>
+            <p class="mensagem-contagem">Até lá! ♡</p>
+            <a href="{{ url_for('presente') }}" class="voltar">
+                ← Voltar
+            </a>
+        </section>
+    </main>
+    <script src="{{ url_for('public', filename='js/script.js') }}"></script>
+</body>
+</html>

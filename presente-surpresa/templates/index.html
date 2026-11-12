@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma surpresa para você</title>
+    <link rel="stylesheet" href="{{ url_for('public', filename='css/style.css') }}">
+</head>
+<body>
+    <main class="pagina-inicial">
+        <section class="conteudo">
+            <p class="texto-superior">Você tem uma</p>
+            <h1>surpresa</h1>
+            <p class="texto-inferior">esperando por você.</p>
+            <div class="acao">
+                <p>Clique para descobrir...</p>
+                <a href="{{ url_for('presente') }}" class="botao">
+                    Continuar
+                    <span>→</span>
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
